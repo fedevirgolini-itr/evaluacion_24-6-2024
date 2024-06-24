@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export default function Ejercicio1() {
   const [fruta,setFruta]=useState("Manzana")
-function handleFruta(event){
+  const handleFruta=(event)=>{
   setFruta(event.target.value)
 }
   return (
