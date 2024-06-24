@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react"
 import ElementoLista from './ElementoLista';
 export default function Ejercicio3() {
-  const [materias,setMaterias]=useState(["Informatica Aplicada II","Programacion II","Robotica","Matemática","Física"])
+
   return (
     <div>
       <h2>Ejercicio 3: Modularización</h2>
@@ -10,12 +10,13 @@ export default function Ejercicio3() {
    
       <ul>
    
-      <ElementoLista materia={materias[0]}></ElementoLista>
-      <ElementoLista materia={materias[1]}></ElementoLista>
-      <ElementoLista materia={materias[2]}></ElementoLista>
-      <ElementoLista materia={materias[3]}></ElementoLista>
-      <ElementoLista materia={materias[4]}></ElementoLista>
+      <ElementoLista materia={"Informatica Aplicada II"}></ElementoLista>
+      <ElementoLista materia={"Programacion II"}></ElementoLista>
+      <ElementoLista materia={"Robotica"}></ElementoLista>
+      <ElementoLista materia={"Matemática"}></ElementoLista>
+      <ElementoLista materia={"Física"}></ElementoLista>
       </ul>
     </div>
   )
 }
+{materias.map((materia)=><ElementoLista materia={materia}></ElementoLista>)}
